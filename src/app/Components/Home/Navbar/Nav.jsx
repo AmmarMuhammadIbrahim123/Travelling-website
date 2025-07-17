@@ -1,13 +1,23 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { TbAirBalloon } from 'react-icons/tb';
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { navlinks } from '../../Constant/constant';
 import Link from 'next/link';
 
 const Nav = ({openNav}) => {
+  const [navBg,setNavBg] = useState (false)
+  useEffect(()=>{
+    const handler=()=>{
+      if(window.scrollY >= 90) setNavBg(true);
+      if(window.scrollY < 90) setNavBg(false)
+    }
+  window.addEventListener("scroll",handler);
+  return ()=>   window.removeEventListener("scroll",handler);
+
+  },[])
   return (
-    <div className='bg-blue-950 transition-all duration-200 h-[12vh] z-[1000] fixed w-full'>
+    <div className={`${navBg? "bg-blue-950 shadow-md" : "fixed"} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
         <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
           <div className='flex items-center space-x-2'>
             <div className='  w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center flex-col  '>
@@ -21,7 +31,7 @@ const Nav = ({openNav}) => {
   {navlinks.map((link) => {
     return (
       <Link href={link.url} key={link.id}>
-        <p className=' block text-white hover:text-rose-500 transition duration-200 font-medium cursor-pointer'>
+        <p className=' block text-white hover:text-gray-500 transition duration-200 font-medium cursor-pointer'>
           {link.label}
         </p>
       </Link>

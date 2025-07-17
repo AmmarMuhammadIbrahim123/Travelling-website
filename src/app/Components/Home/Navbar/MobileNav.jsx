@@ -25,7 +25,7 @@ const MobileNav = ({closeNav,showNav}) => {
 
         )}
       {/* close button */}
-      <CgClose onClick={closeNav} className='absolute top-[0.7rem] right-[1.4rem] sm:w-8 w-6 h-6 '/>
+      <CgClose onClick={closeNav} className=' cursor-pointer absolute top-[0.7rem] right-[1.4rem] sm:w-8 w-6 h-6 '/>
       </div>
       </div>
   )
