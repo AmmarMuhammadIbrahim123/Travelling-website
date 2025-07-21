@@ -42,7 +42,7 @@ const ReviewsSlider = () => {
                             className='rounded-full'/>
                         </div>
                         <p className='text-sm sm:text-lg font-semibold'>{data.name}</p>
-                        <p className='text-gray-600 text-[6%] sm:text-base'>Web Developer </p>
+                        <p className='text-gray-600 text-xs sm:text-base'>Web Developer </p>
                         </div>
                 </div>
                 </SwiperSlide>
