@@ -8,7 +8,7 @@ const Hero = () => {
     <div className='relative w-full h-[120vh]  sm:h-[100] '>
     
       {/* OVERLAY */}
-      <div className='absolute top-0 left-0 h-full w-full bg-gray-800 opacity-90'>
+      <div className='absolute top-0 left-0 h-full w-full  bg-black'>
        
        {/* VIDEO */}
         <video src='images/hero1.mp4'
@@ -16,7 +16,7 @@ const Hero = () => {
         muted
         loop
         preload='metadata'
-        className='w-full h-full object-cover'/>
+        className='w-full h-full object-cover brightness-50'/>
 
         {/* TEXT-CONTAINER */}
         <div className='absolute z-[100] w-full h-full left-[50%] top-[40%] translate-x-[-50%] translate-y-[-50%]'>
