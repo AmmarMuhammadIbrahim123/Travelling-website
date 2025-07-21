@@ -1,8 +1,7 @@
 import React from 'react'
 import { FaHeart } from 'react-icons/fa'
 import Image from 'next/image'
-import { hotelsData } from '../../data/data'
-import Hotel from './Hotel'
+
 
 const HotelCard = ({  hotel }) => {
   return (

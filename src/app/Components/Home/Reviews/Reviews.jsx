@@ -32,11 +32,12 @@ const Reviews = () => {
               </div>
             </div>
           </div>
-          {/* Review Slider */}
-          <div className="overflow-hidden">
-            <ReviewsSlider/>
-         </div> 
+         
         </div>
+         {/* Review Slider */}
+          <div className="overflow-hidden">
+            < ReviewsSlider/>
+         </div> 
       </div>
     </div>
   );

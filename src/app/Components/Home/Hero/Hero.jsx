@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Searchbox from '../../Helper/Searchbox'
 import Link from 'next/link'
@@ -21,8 +22,8 @@ const Hero = () => {
         <div className='absolute z-[100] w-full h-full left-[50%] top-[40%] translate-x-[-50%] translate-y-[-50%]'>
             <div className='flex items-center justify-center w-full h-full flex-col'>
                 
-                <div>
-                    <h1 className='text[25px] mb-4 md:mb-0 text-center md:text-[35px] lg:text-[45px] tracking-[0.7rem]
+                <div data-aos="fade-up">
+                    <h1  className='text[25px] mb-4 md:mb-0 text-center md:text-[35px] lg:text-[45px] tracking-[0.7rem]
                     text-white font-bold uppercase'>
                     Let's Enjoy The Nature
                     </h1>
