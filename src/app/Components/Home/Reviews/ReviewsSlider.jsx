@@ -32,7 +32,7 @@ const ReviewsSlider = () => {
                         <FaStar className='md:w-6 md:h-6 w-3 h-3 text-yellow-600'/>
                         <FaStar className='md:w-6 md:h-6 w-3 h-3 text-yellow-600'/>
                     </div>
-                    <div className='mt-10'>
+                    <div className='mt-5'>
                         <div className='flex items-center space-x-4'>
                             <Image 
                             src={data.image}
