@@ -10,6 +10,7 @@ import Reviews from './Reviews/Reviews';
 import News from './News/News';
 import NewsLetter from './NewsLetter/NewsLetter';
 import ScrollToTop from '../Helper/ScrollToTop';
+import ResponsiveNav from './Navbar/ResponsiveNav';
 
 const Home = () => {
  useEffect(() => {
@@ -22,6 +23,8 @@ const Home = () => {
 }, []);
   return (
     <div className='overflow-hidden'>
+     
+     <ResponsiveNav/>
       <Hero />
       <Destination />
       <Hotel />

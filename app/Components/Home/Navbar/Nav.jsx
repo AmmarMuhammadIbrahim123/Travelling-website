@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { TbAirBalloon } from "react-icons/tb";
 import { HiBars3BottomRight } from "react-icons/hi2";
-import { navlinks } from "../../Constant/constant";
 import Link from "next/link";
+import { navlinks } from "../../Constant/Constant";
 
 const Nav = ({ openNav }) => {
   const [navBg, setNavBg] = useState(false);
